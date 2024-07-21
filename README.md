@@ -5,6 +5,6 @@ todo:
 - 自定义json响应 √
 - 自定义错误 √
 - 集成数据库
-  - mysql
+  - mysql √
   - redis
 - 想到啥就加啥....

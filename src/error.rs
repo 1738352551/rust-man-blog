@@ -20,6 +20,9 @@ pub enum ServerError {
         field: String,
         error_message: String,
     },
+
+    // #[display(fmt = "sql语句错误")]
+    // DbErr
 }
 
 impl error::ResponseError for ServerError {

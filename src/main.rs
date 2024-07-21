@@ -1,9 +1,8 @@
 use crate::config::routes;
-use actix_web::dev::HttpServiceFactory;
 use actix_web::{web, App, HttpServer};
 use sea_orm::{Database, DatabaseConnection};
-use std::sync::{Arc, Mutex};
-
+use std::sync::{Arc};
+use tokio::sync::Mutex;
 mod api;
 mod config;
 mod custom_resp;
