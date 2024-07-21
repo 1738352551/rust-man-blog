@@ -1,15 +1,8 @@
 use actix_web::Responder;
 
-use crate::{error::ServerError, custom_resp::JsonResp};
+use crate::{custom_resp::JsonResp, error::ServerError};
 
-/// path: /api/users/login
+/// path: /users/login
 pub async fn login() -> Result<impl Responder, ServerError> {
-
-    Ok(
-        JsonResp::<String> {
-            code: 200,
-            msg: "123123".to_string(),
-            data: None,
-        }
-    )
+    Ok(JsonResp::<String>::success("登录成功!", None))
 }

@@ -1,0 +1,5 @@
+database:
+  url: mysql://root:Huanyuan2.@127.0.0.1/man_blog_db
+server:
+  address: 127.0.0.1
+  port: 8989
