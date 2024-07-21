@@ -5,10 +5,17 @@ edition = "2021"
 
 [dependencies]
 actix-web = { version = "4", features = ["macros"] }
-sea-orm = { version = "0.12", features = [ "sqlx-mysql", "runtime-actix-native-tls", "macros" ] }
+sea-orm = { version = "0.12", features = [ "sqlx-mysql", "runtime-actix-native-tls", "macros", "debug-print" ] }
 serde = { version = "1", features = ["derive"] }
 serde_yaml = "0.9"
 derive_more = "0.99"
 serde_json = "1.0.120"
 sqlx = { version = "0.5", features = ["runtime-actix-rustls", "macros", "mysql"] }
 tokio = { version = "1", features = ["full"] }
+
+tracing-subscriber = { version = "0.3", features = ["local-time", "fmt", "chrono"]}
+tracing = "0.1"
+log = "0.4"
+tracing-log = "0.2.0"
+time = "0.3"
+chrono = "0.4"
